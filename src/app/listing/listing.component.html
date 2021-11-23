@@ -1,0 +1,15 @@
+<h1 class="display-1" style="text-align:center; font-size: 50px;">Liste de Course</h1>
+<br><br><br>
+
+<h4 class="display-4" style="font-size: 30px; text-align: center;" *ngFor="let aliment of aliments"> {{ aliment }} </h4>
+
+<div class="text-center">
+    <br><br><br><br><br><br><br><br>
+    <button class="btn btn-outline-dark btn-lg" (click)="goCreate()"  style="width: 7cm;">Ajouter des aliments</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="btn btn-outline-dark btn-lg" (click)="clear()"  style="width: 7cm;">Supprimer la liste</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="btn btn-outline-dark btn-lg" (click)="goAcceuil()" style="width: 7cm;">Acceuil</button>
+    <br><br>
+    <button class="btn btn-danger" (click)="onSignOut()">Se Déconnecter</button>
+</div>

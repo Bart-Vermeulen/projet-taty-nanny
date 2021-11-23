@@ -1,0 +1,19 @@
+<h1 class="display-1" style="text-align:center; font-size: 50px;">Login Originel</h1>
+<br>
+<br>
+<div class="mb-3 row">
+    <label for="login" class="col-sm-2 col-form-label">Login</label>
+    <div>
+        <input class="form-control" id="login">
+    </div>
+</div>
+<div class="mb-3 row">
+    <label for="password" class="col-sm-2 col-form-label">Password</label>
+    <div>
+      <input type="password" class="form-control" id="password">
+    </div>
+</div>
+
+<br>
+<button class="btn btn-success" *ngIf="!authStatus" (click)="onSignIn()" style="margin-left: 260px;">Se Connecter</button>
+<button class="btn btn-danger" *ngIf="authStatus" (click)="onSignOut()" style="margin-left: 260px;">Se Déconnecter</button>

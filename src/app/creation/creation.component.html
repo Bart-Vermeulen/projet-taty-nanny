@@ -1,0 +1,20 @@
+<h1 class="display-1" style="text-align:center; font-size: 50px;">Ajouter des aliments à la liste de course</h1>
+<br>
+<br>
+<div class="mb-3 row">
+    <label for="login" class="col-sm-2 col-form-label">Aliments</label>
+    <div>
+        <input type="text" class="form-control" [(ngModel)]="aliment">
+    </div>
+    &nbsp;
+    <button class="btn btn-success" (click)="ajouterAliment()" style="margin-left: 10px;">Ajouter</button>
+</div>
+<div class="text-center">
+    <br><br><br><br><br><br><br><br>
+    <button class="btn btn-outline-dark btn-lg" (click)="goList()" style="width: 7cm;">Liste de course</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="btn btn-outline-dark btn-lg" (click)="goAcceuil()" style="width: 7cm;">Acceuil</button>
+    <br><br>
+    <button class="btn btn-danger" (click)="onSignOut()">Se Déconnecter</button>
+</div>
+
